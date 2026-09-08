@@ -1,7 +1,7 @@
 ﻿open System
 open System.Threading
 
-// Simula um trabalhador que executa uma tarefa
+
 let trabalhador numero tempoTrabalho =
     printfn "Trabalhador %d começou" numero
 
@@ -21,7 +21,7 @@ let main argv =
     // Criar lista de threads
     let threads = ResizeArray<Thread>()
 
-    // Criar e iniciar 5 threads
+    
     for i in 0 .. 4 do
 
         let thread =
@@ -35,7 +35,7 @@ let main argv =
 
         thread.Start()
 
-    // Aguardar todas as threads terminarem
+    
     for thread in threads do
         thread.Join()
 
