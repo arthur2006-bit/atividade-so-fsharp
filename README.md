@@ -38,6 +38,4 @@ docker build -t thread3 .
 docker run --rm thread3
 ```
 
-## Requisito
 
-* Docker Desktop
